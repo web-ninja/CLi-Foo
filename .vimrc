@@ -25,7 +25,7 @@ set shiftwidth=4
 set tabstop=4
 
 " Spaces instead of tabs
-" set expandtab
+set expandtab
 
 " Always  set auto indenting on
 set autoindent
@@ -59,6 +59,7 @@ filetype indent plugin on
 au FileType php set omnifunc=phpcomplete#CompletePHP
 au BufNewFile,BufRead *.html.twig set ft=html.twig
 au BufNewFile,BufRead *.twig set syntax=twig
+au BufNewFile,BufRead *.less set ft=less
 
 let php_sql_query=1
 let php_htmlInStrings=1
